@@ -1,0 +1,9 @@
+# Archivos de IntelliJ
+.idea/
+*.iml
+
+# Compilados de Maven
+target/
+
+# Fotos subidas en pruebas
+uploads/
