@@ -1,10 +1,8 @@
 package cl.duocuc.rinconsur.perfiles_service.controller;
 
-import java.net.URI;
 import java.sql.Blob;
 import java.util.List;
 
-import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -95,7 +93,7 @@ public class Controller {
     @GetMapping ("/colab/rut")
     public ResponseEntity<Colaborador> getColaboradorByRut(@RequestParam String rut){
         try {
-            Colaborador perfil=service.getColaboradorByCorreo(correo);
+            Colaborador perfil=service.getColaboradorByRut(rut);
             if(!perfil.equals(null)){
                 return ResponseEntity.ok(perfil);
             }else{
