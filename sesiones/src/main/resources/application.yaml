@@ -2,7 +2,7 @@ spring:
   application:
     name: sesiones
   datasource:
-      url: jdbc:mysql://localhost:3306/db_vsm_perfiles
+      url: jdbc:mysql://localhost:3306/db_vsm_sesiones
       username: root
       password:
   jpa:
@@ -10,7 +10,7 @@ spring:
         ddl-auto: create
     show-sql: true
 server:
-  port: 8080
+  port: 8081
 eureka:
   client:
     service-url:
